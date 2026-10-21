@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Dark Canvas",
+  "version": "1.0",
+  "description": "A basic WebExtension scaffold for dark mode on Canvas LMS.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.instructure.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
